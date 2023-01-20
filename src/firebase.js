@@ -9,12 +9,13 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBERWcDxD73fkBlEPDwz8ZgCCn7IZFmIUk",
-    authDomain: "dxndn-31acf.firebaseapp.com",
-    projectId: "dxndn-31acf",
-    storageBucket: "dxndn-31acf.appspot.com",
-    messagingSenderId: "112026057504",
-    appId: "1:112026057504:web:a92fc8227c991f1b56b545"
+  apiKey: "AIzaSyDp_eq6fZpV7yjO09enuk3GyIHsbYdqEAQ",
+  authDomain: "airbus-clone-react.firebaseapp.com",
+  projectId: "airbus-clone-react",
+  storageBucket: "airbus-clone-react.appspot.com",
+  messagingSenderId: "610223257861",
+  appId: "1:610223257861:web:dd244e151e20d711acdf6c",
+  measurementId: "G-3C102WFWBG"
   };
   
   // Initialize Firebase
