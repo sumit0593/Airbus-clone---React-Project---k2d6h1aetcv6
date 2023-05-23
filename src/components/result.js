@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Payment from "./Payment";
 import { MediumContext } from "../context/MediumContext";
+import Footer from "./Footer";
 
 const Result = () => {
   const { st } = useContext(MediumContext);
@@ -59,35 +60,27 @@ const Result = () => {
               />
             </div>
             <div className="relative z-0 w-full mb-6 group">
-              <input
-                type="number"
-                name="floating_last_name"
-                id="floating_last_name"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                placeholder="CVV"
-                required
-              />
-            </div>
-          </div>
-          <button
-            type="submit"
-            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Submit
-          </button>
-        </form>
+          <input
+            type="text"
+            name="floating_last_name"
+            id="floating_last_name"
+            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder="CVV"
+            required
+          />
+        </div>
       </div>
-      <div>
-        <footer>
-          <div className="absolute bottom-0 left-0 right-0 px-4 py-14 bg-gray-800 opacity-70">
-            <h1 className="text-5xl text-white font-bold text-center">
-              Thanks For Trusting Us
-            </h1>
-          </div>
-        </footer>
-      </div>
-    </div>
-  );
+      <button className="bg-blue-600 text-white p-2 rounded-lg w-full mt-4">
+        PAY NOW
+      </button>
+    </form>
+  </div>
+  <Footer />
+
+  
+</div>
+);
 };
 
 export default Result;
+           
